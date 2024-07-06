@@ -3,9 +3,9 @@ import java.io.*;
 import  java.net.*;
 
 /**
- * Server class is server side source code in this  chatServer project.
- * When we run this program server will keep waiting for client to get connected.
- * Where we can also say this as socket programming.
+ * Server class is server side source code in this chatserver project.
+ * When we run this program, server will keep waiting for client to get connected.
+ * this program also represents socket programming.
  *
  */
 public class Server {
