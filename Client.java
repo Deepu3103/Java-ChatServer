@@ -22,9 +22,9 @@ public class Client {
     public Client(){
         try {
             System.out.println("Sending request to server");
-            socket=new Socket("192.168.186.17",7779);
+            socket=new Socket();
+            socket.connect(new InetSocketAddress("192.168.0.114",12345));
             System.out.println("Connection done");
-
             br=new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out=new PrintWriter(socket.getOutputStream());
             startReading();
