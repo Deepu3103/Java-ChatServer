@@ -25,10 +25,15 @@ public class Client {
             socket=new Socket();
             socket.connect(new InetSocketAddress("192.168.0.114",12345));
             System.out.println("Connection done");
+            System.out.println("Hello"); System.out.println("Hello");
+            System.out.println("Hello");
+            System.out.println("Hello");
+
             br=new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out=new PrintWriter(socket.getOutputStream());
             startReading();
             startWriting();
+            
 
         }
         catch (Exception e ){
